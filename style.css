@@ -1,0 +1,102 @@
+.header, .container {
+    display: flex;
+    justify-content: center;
+}
+.header {
+    margin-top: 50px;
+}
+body {
+    background-image: url(yellow.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: #f2bc00;
+}
+
+h1 {
+    font-size: 60px;
+    background: linear-gradient(to right, #f20765, #1251e4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.inputField {
+    padding: 10px;
+    width: 40%;
+    border: none;
+    font-size: 25px;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+.inputField:focus {
+    border: 2px solid #f20765;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    background: #f20765;
+    color: #F6F6F6;
+}
+.toDoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.toDoAdded {
+    list-style: none;
+    background: #f20765;
+    width: 45%;
+    font-size: 25px;
+    color: #F6F6F6;
+    padding: 10px;
+    border-bottom: 1px solid #f55595;
+    text-align: center;
+}
+
+.toDoCompleted {
+    background-color: #2060f5;
+    border-bottom: 1px solid #377cf7;
+    color: #000;
+    text-decoration: line-through;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+@media all and (max-width:820px) {
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+@media all and (max-width:540px) {
+    .header {
+        margin: 5px;
+    }
+    h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+    .inputField {
+        padding: 5px;
+        width: 50%;
+    }
+    .btn {
+        font-size: 20px;
+    }
+    .inputField, .toDoAdded {
+        font-size: 20px;
+    }
+
+    .toDoAdded {
+        width: 60%;
+    }
+}
